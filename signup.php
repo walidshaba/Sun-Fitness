@@ -20,6 +20,7 @@ if(isset($_POST['submit']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sun Fitness</title>
     <link rel="stylesheet" href="assets/styles/main.css" />
+    <script src="assets/scripts/app.js" defer></script>
   </head>
   <body>
     <div class="background-img"></div>
@@ -68,8 +69,8 @@ if(isset($_POST['submit']))
             />
           </div>
           <div class="form-field">
-            <img src="assets/images/icons/lock-solid.svg" alt="" />
-            <input type="password" placeholder="password" name="password"/>
+            <img src="assets/images/icons/lock-solid.svg" alt="" class="locked" />
+            <input type="password" placeholder="password" name="password" id="password"/>
           </div>
           <input type="submit" placeholder="Register" name="submit" />
           <p><a href="">Login instead?</a></p>

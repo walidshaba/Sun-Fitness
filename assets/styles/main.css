@@ -109,3 +109,7 @@ form p a {
 form p a:hover {
   color: blue;
 }
+
+.eye {
+  background-image: url('../images/icons/eye-regular.svg');
+}
