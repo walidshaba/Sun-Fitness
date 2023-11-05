@@ -110,6 +110,15 @@ form p a:hover {
   color: blue;
 }
 
-.eye {
-  background-image: url('../images/icons/eye-regular.svg');
+.form-field .eye-open {
+  width: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+  top: 10px;
+}
+
+.form-field .eye-open img {
+  z-index: 1;
 }
