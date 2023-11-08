@@ -107,18 +107,62 @@ form p a {
 }
 
 form p a:hover {
-  color: blue;
+  color: #a03333;
 }
 
-.form-field .eye-open {
+.form-field #eye {
   width: 20px;
-  overflow: hidden;
+  height: 20px;
+  /* overflow: hidden; */
   position: absolute;
   right: 10px;
-  z-index: 1;
+  z-index: 22;
   top: 10px;
+  background-image: url('../images/icons/eye-regular.svg');
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  transition: all ease-in-out 0.35s;
 }
 
-.form-field .eye-open img {
-  z-index: 1;
+.form-field #eye.active {
+  width: 20px;
+  height: 20px;
+  /* overflow: hidden; */
+  position: absolute;
+  right: 10px;
+  z-index: 22;
+  top: 10px;
+  background-image: url('../images/icons/eye-slash-regular.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
+
+.form-field #lock {
+  background-image: url('../images/icons/lock-solid.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  z-index: 1;
+  transition: all ease-in-out 0.35s;
+}
+
+.form-field #lock.unlock {
+  background: url('../images/icons/unlock-solid.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+/* .form-field .eye-open img {
+} */
