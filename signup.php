@@ -54,7 +54,7 @@
           </div>
           <div class="form-field">
             <img src="assets/images/icons/envelope-regular.svg" alt="" />
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="email" name="email" id="email" placeholder="staff@sun.edu.ng" />
           </div>
           <div class="form-field">
             <img src="assets/images/icons/id-badge-regular.svg" alt="" />
@@ -75,6 +75,7 @@
             />
             <div class="eye" id="eye"></div>
           </div>
+          
           <input type="submit" placeholder="Register" name="submit" />
           <p><a href="">Login instead?</a></p>
         </form>
