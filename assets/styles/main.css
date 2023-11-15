@@ -264,22 +264,31 @@ main .login_form-container {
 /* Menu styles */
 .main-container {
   background-color: #f5f7fa;
+  width: 100vw;
+  height: 100%;
+}
+
+.main-container .head-txt {
+  position: absolute;
+  top: 100px;
+  left: 50px;
 }
 
 .main-container .head-txt > * {
   color: #192335;
-  margin-bottom: 10px;
 }
 
 .main-container .head-txt h1 {
   color: #192335;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: 0.2px;
+  margin-bottom: 5px;
 }
 
 .main-container .head-txt p {
-  font-size: 30px;
+  font-size: 20px;
+  margin: 20px 0;
 }
 
 .main-container .head-txt .get-started {
@@ -300,9 +309,30 @@ main .login_form-container {
 }
 .main-container .head-txt .get-started:hover {
   border: 2px solid #192335;
+  color: #192335;
 }
+
 .main-container .head-txt .get-started svg {
   width: 20px;
+  transition: all ease-in-out 0.35s;
 }
+
+.main-container .head-txt .get-started:hover svg {
+  fill: #192335;
+}
+
+.banner {
+  width: 100%;
+  height: 100px;
+  background-image: url('../images/icons/banner-bg-shape-1.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.land-txt {
+  text-align: center;
+}
+
 /* -color-light: #F5F7FA; */
 /* --color-heading: #192335; */
