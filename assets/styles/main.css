@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -267,4 +266,42 @@ main .login_form-container {
   background-color: #f5f7fa;
 }
 
+.main-container .head-txt > * {
+  color: #192335;
+  margin-bottom: 10px;
+}
+
+.main-container .head-txt h1 {
+  color: #192335;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.main-container .head-txt p {
+  font-size: 30px;
+}
+
+.main-container .head-txt .get-started {
+  padding: 10px 15px;
+  background-color: #a03333;
+  width: fit-content;
+  border-radius: 4px;
+  transition: all ease-in-out 0.35s;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+.main-container .head-txt .get-started:hover {
+  background-color: #192335;
+}
+.main-container .head-txt .get-started svg {
+  width: 20px;
+}
 /* -color-light: #F5F7FA; */
+/* --color-heading: #192335; */
