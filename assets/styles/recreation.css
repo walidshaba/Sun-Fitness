@@ -37,6 +37,15 @@ body {
   left: 50px;
 }
 
+.main-container {
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
 .menu {
   display: flex;
   margin-top: 100px;
@@ -48,13 +57,16 @@ body {
   overflow: hidden;
   flex-direction: column;
 }
+.menu a {
+  text-decoration: none;
+  padding: 30px;
+}
 
 .menu label {
   font-size: 20px;
   color: #000;
-  padding: 10px;
-  transition: all ease-in-out 0.35s;
   padding: 30px;
+  transition: all ease-in-out 0.35s;
   cursor: pointer;
 }
 
@@ -73,17 +85,36 @@ body {
 
 .page-cover {
   width: 1200px;
-  position: absolute;
-  top: 200px;
+  /* position: absolute; */
+  /* top: 200px;
   bottom: 20px;
-  left: 300px;
+  left: 300px; */
   background-color: #f5f7fa;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 550px;
 }
 
+.page-cover ul {
+  height: 552px;
+}
+
+.page-cover .dash {
+  height: 550px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.page-cover .dash li {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
 .page-cover .bmi {
   display: none;
 }
