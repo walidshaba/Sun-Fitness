@@ -19,11 +19,35 @@ body {
   width: 100%;
   background-color: #192335;
   color: #fff;
-  height: 160px;
-  /* text-align: center; */
-  line-height: 80px;
+  height: 80px;
+  text-align: center;
 }
 
 .prm-nme > * {
+  line-height: 80px;
   display: inline-block;
+}
+
+.menu {
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 60px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.menu li {
+  font-size: 20px;
+  color: #000;
+  padding: 10px;
+  transition: all ease-in-out 0.35s;
+  padding: 30px;
+}
+
+.menu li:hover {
+  background-color: #192335;
+  color: #fff;
 }
