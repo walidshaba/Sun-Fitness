@@ -33,7 +33,7 @@ body {
   position: absolute;
   display: inline-block;
   background-color: #f5f7fa;
-  border-radius: 30%;
+  border-radius: 50%;
   left: 50px;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .menu label {
   font-size: 20px;
-  color: #000;
+
   padding: 30px;
   transition: all ease-in-out 0.35s;
   cursor: pointer;
@@ -74,51 +74,105 @@ body {
   background-color: #192335;
   color: #f5f7fa;
 }
+.menu label:hover a {
+  color: #f5f7fa;
+}
+
+.menu label a {
+  color: #000;
+}
+.menu label.active {
+  background-color: #192335;
+}
+.menu label.active a {
+  color: #f5f7fa;
+}
 .menu input {
   display: none;
 }
 
-.radio_input:checked + .radio_label {
+/* .radio_input:checked + .radio_label {
   color: #f5f7fa;
   background-color: #192335;
-}
+} */
 
-.page-cover {
+.main-container .page-cover {
   width: 1200px;
-  /* position: absolute; */
-  /* top: 200px;
-  bottom: 20px;
-  left: 300px; */
+  height: 550px;
   background-color: #f5f7fa;
-  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 550px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.page-cover ul {
-  height: 552px;
-}
-
-.page-cover .dash {
-  height: 550px;
+.main-container .page-cover .dashboard {
   display: flex;
-  list-style: none;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 100px;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 20px; */
+}
+.page-cover .dashboard li {
+  width: 220px;
+  height: 220px;
+  background-color: #192335;
+  margin-right: 10px;
+  border-radius: 10px;
+  /* overflow: hidden; */
 }
 
-.page-cover .dash li {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-}
-.page-cover .bmi {
-  /* display: none; */
+.dashboard li a {
+  text-decoration: none;
+  color: #f5f7fa;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.page-cover .active {
-  display: block;
+.dashboard li a img {
+  width: 220px;
+  height: 220px;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all ease-in-out 0.35s;
+}
+
+.dashboard li a:hover img {
+  opacity: 0.3;
+}
+.dashboard li a .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: -500%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.dashboard li a:hover .middle {
+  opacity: 1;
+}
+
+.dashboard li a span {
+  transition: all ease-in-out 0.35s;
+  font-size: 26px;
+  color: #f5f7fa;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: #f5f7fa;
+  font-size: 18px;
 }

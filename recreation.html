@@ -3,75 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles/recreation.css" />
-    <link rel="stylesheet" href="../assets/styles/bmistyle.css" />
+    <link rel="stylesheet" href="assets/styles/recreation.css" />
     <title>Recreation</title>
-    <script src="../assets/scripts/bmiscript.js" defer></script>
-    <script src="../assets/scripts/app.js" defer></script>
+    <script src="assets/scripts/bmiscript.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
   </head>
   <body>
     <main>
       <div class="prm-nme">
-        <img src="../assets/images/sunlogo.png" alt="" />
+        <img src="assets/images/sunlogo.png" alt="" />
         <h1>Sun Fitness Program</h1>
       </div>
       <div class="main-container">
         <ul class="menu">
-          <input
-            type="radio"
-            name="radmenu"
-            class="radio_input"
-            id="dashboard"
-            checked
-          />
-          <a href="#dash">
-            <label for="dashboard" class="radio_label">Dashboard</label>
-          </a>
-          <input type="radio" name="radmenu" id="workout" class="radio_input" />
-          <label for="workout" class="radio_label">Workout</label>
-          <input type="radio" name="radmenu" id="bmi" class="radio_input" />
-          <label for="bmi" class="radio_label">BMI</label>
-          <input
-            type="radio"
-            name="radmenu"
-            id="calender"
-            class="radio_input"
-          />
-          <label for="calender" class="radio_label">Calender</label>
-          <input type="radio" name="radmenu" id="blog" class="radio_input" />
-          <label for="blog" class="radio_label">Blog</label>
+          <label class="radio_label active">
+            <a href="">Dashboard</a>
+          </label>
+          <label class="radio_label">
+            <a href="">Workout</a>
+          </label>
+          <label class="radio_label"><a href="">BMI</a></label>
+          <label class="radio_label">
+            <a href="">Calender</a>
+          </label>
+          <label class="radio_label">
+            <a href="">Blogs</a>
+          </label>
         </ul>
 
         <div class="page-cover">
-          <ul class="dash" id="dash">
+          <ul class="dashboard">
             <li>
               <a href="">
-                <img src="../assets/images/football.jpg" alt="fooball" />
-                <span>Football</span>
+                <img src="assets/images/football.jpg" alt="fooball" />
+                <div class="middle"><span>Football</span></div>
               </a>
             </li>
             <li>
               <a href="">
-                <img src="../assets/images/Basketball.jpg" alt="basketball" />
-                <span>Basketball</span>
+                <img src="assets/images/Basketball.jpg" alt="basketball" />
+                <div class="middle"><span>Basketball</span></div>
               </a>
             </li>
             <li>
               <a href="">
-                <img src="../assets/images/softball.jpg" alt="softball" />
-                <span>Softball</span>
+                <img src="assets/images/softball.jpg" alt="softball" />
+                <div class="middle"><span>Softball</span></div>
               </a>
             </li>
             <li>
               <a href="">
-                <img src="../assets/images/Badminton.jpg" alt="badminton" />
-                <span>Badminton</span>
+                <img src="assets/images/Badminton.jpg" alt="badminton" />
+                <div class="middle"><span>Badminton</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="assets/images/Jogging.jpg" alt="Jogging" />
+                <div class="middle"><span>Jogging</span></div>
               </a>
             </li>
           </ul>
-          <ul class="calender"></ul>
-          <ul class="bmi" id="bmi">
-            <h1>BMI Calculator</h1>
+          <!-- <ul class="calender"></ul>
+          <ul class="bmi" id="bmi"> -->
+          <!-- <h1>BMI Calculator</h1>
 
             <form class="calculator">
               <div>
@@ -128,12 +123,13 @@
                 <h4>Obese</h4>
                 <p>≥ 30</p>
               </div>
-            </section>
-          </ul>
+            </section> -->
+          <!-- </ul>
           <ul class="workout"></ul>
-          <ul class="Blog"></ul>
+          <ul class="Blog"></ul> -->
         </div>
       </div>
     </main>
+    <footer>&copy; 2023/34 SE Grp1 Project</footer>
   </body>
 </html>
