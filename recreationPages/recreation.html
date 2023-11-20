@@ -4,21 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/recreation.css" />
+    <link rel="stylesheet" href="../assets/styles/bmistyle.css" />
     <title>Recreation</title>
+    <script src="../assets/scripts/bmiscript.js" defer></script>
+    <script src="../assets/scripts/app.js" defer></script>
   </head>
   <body>
     <main>
       <div class="prm-nme">
-        <img src="../assets/images/" alt="" />
+        <img src="../assets/images/sunlogo.png" alt="" />
         <h1>Sun Fitness Program</h1>
       </div>
       <ul class="menu">
-        <li>Dashboard</li>
-        <li>Calender</li>
-        <li>BMI</li>
-        <li>Workout</li>
-        <li>Blog</li>
+        <input
+          type="radio"
+          name="radmenu"
+          id="dashboard"
+          class="radio_input"
+          checked
+        />
+        <label for="dashboard" class="radio_label">Dashboard</label>
+        <input type="radio" name="radmenu" id="workout" class="radio_input" />
+        <label for="workout" class="radio_label">Workout</label>
+        <input type="radio" name="radmenu" id="bmi" class="radio_input" />
+        <label for="bmi" class="radio_label" id="bmi2">BMI</label>
+        <input type="radio" name="radmenu" id="calender" class="radio_input" />
+        <label for="calender" class="radio_label">Calender</label>
+        <input type="radio" name="radmenu" id="blog" class="radio_input" />
+        <label for="blog" class="radio_label">Blog</label>
       </ul>
+
+      <div class="page-cover">
+        <ul class="dashboard" id="dash-men"></ul>
+        <ul class="calender" id="cal-men"></ul>
+        <ul class="bmi" id="bmi-menu">
+          <h1>BMI Calculator</h1>
+
+          <form class="calculator">
+            <div>
+              <label for="weight">Weight (kg)</label>
+              <input type="number" id="weight" min="0" step="0.01" value="0" />
+            </div>
+
+            <div>
+              <label for="height">Height (cm)</label>
+              <input type="number" id="height" min="0" step="0.01" value="0" />
+            </div>
+
+            <div>
+              <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+
+          <section class="output">
+            <h3>Your BMI is</h3>
+            <p id="bmi">0</p>
+            <p id="desc">N/A</p>
+          </section>
+
+          <section class="bmi-scale">
+            <div style="--color: var(--underweight)">
+              <h4>Underweight</h4>
+              <p>&lt; 18.5</p>
+            </div>
+
+            <div style="--color: var(--normal)">
+              <h4>Normal</h4>
+              <p>18.5 – 25</p>
+            </div>
+
+            <div style="--color: var(--overweight)">
+              <h4>Overweight</h4>
+              <p>25 – 30</p>
+            </div>
+
+            <div style="--color: var(--obese)">
+              <h4>Obese</h4>
+              <p>≥ 30</p>
+            </div>
+          </section>
+        </ul>
+        <ul class="workout" id="work-men"></ul>
+        <ul class="blog" id="blog-men"></ul>
+      </div>
     </main>
   </body>
 </html>

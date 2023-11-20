@@ -13,3 +13,12 @@ function togglePassword() {
 }
 
 eyeIcon.addEventListener('click', togglePassword);
+
+// Menu toggle
+
+const bmiMenu = document.getElementById('bmi-menu');
+const bmi2 = document.getElementById('bmi');
+
+bmi2.addEventListener('click', function () {
+  bmiMenu.classList.remove('bmi');
+});
