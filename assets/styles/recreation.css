@@ -111,12 +111,12 @@ body {
 }
 
 .page-cover .dash li {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
 }
 .page-cover .bmi {
-  display: none;
+  /* display: none; */
 }
 
 .page-cover .active {
