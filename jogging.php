@@ -76,9 +76,7 @@ else{
               ><input type="date" name="date" id="" />
             </div>
             <br />
-            <div class="text-form">
-              <input type="submit" name="" value="update" />
-            </div>
+            <div class="text-form"><input type="submit" name="submit" value="update"></div>  
           </form>
         </div>
       </div>

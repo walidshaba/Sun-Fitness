@@ -60,7 +60,7 @@ else{
             <div class="text-form"><label for="">Sport:</label><input type="text" value="Badminton" name="sport" readonly></div><br>
             <div class="text-form"> <label for="">Weight in (kg):</label><input type="number" name="weight" id=""></div><br>
             <div class="text-form"> <label for="">Available time:</label><input type="date" name="date" id=""></div><br>
-             <div class="text-form"><input type="submit" name="" value="update"></div>   
+            <div class="text-form"><input type="submit" name="submit" value="update"></div>    
             </form>
         </div>
       </div>
