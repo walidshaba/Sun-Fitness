@@ -23,7 +23,6 @@ else{
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,8 +34,10 @@ else{
   <body>
     <main>
       <div class="prm-nme">
-        <a href="landPage.html"><img src="assets/images/sunlogo.png" alt="" /></a>
-        <h1>Football</h1>
+        <a href="landPage.html"
+          ><img src="assets/images/sunlogo.png" alt=""
+        /></a>
+        <h1>Jogging</h1>
       </div>
       <div class="main-container">
         <ul class="menu">
@@ -55,13 +56,30 @@ else{
           </label>
         </ul>
         <div class="page-cover">
-            <form action="football.php" method="post">
-            <div class="text-form">  <label for="">Full Name:</label><input type="text" name="fname"></div><br>
-            <div class="text-form"><label for="">Sport:</label><input type="text" value="Football" name="sport" readonly></div><br>
-            <div class="text-form"> <label for="">Weight in (kg):</label><input type="number" name="weight" id=""></div><br>
-            <div class="text-form"> <label for="">Available time:</label><input type="date" name="date" id=""></div><br>
-             <div class="text-form"><input type="submit" name="" value="update"></div>   
-            </form>
+          <form action="jogging.php" method="post">
+            <div class="text-form">
+              <label for="">Full Name:</label><input type="text" name="fname" />
+            </div>
+            <br />
+            <div class="text-form">
+              <label for="">Sport:</label
+              ><input type="text" value="Jogging" name="sport" readonly />
+            </div>
+            <br />
+            <div class="text-form">
+              <label for="">Weight in (kg):</label
+              ><input type="number" name="weight" id="" />
+            </div>
+            <br />
+            <div class="text-form">
+              <label for="">Available time:</label
+              ><input type="date" name="date" id="" />
+            </div>
+            <br />
+            <div class="text-form">
+              <input type="submit" name="" value="update" />
+            </div>
+          </form>
         </div>
       </div>
     </main>
