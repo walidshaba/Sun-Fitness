@@ -1,31 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
-:root {
-  --underweight: orange;
-  --normal: green;
-  --overweight: lightcoral;
-  --obese: crimson;
-}
-
 /* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Jost', sans-serif;
-}
+} */
 
-body {
+/* body {
   background: #004d4d;
   display: grid;
   place-items: center;
   height: 100vh;
-}
+} */
 
 h1 {
   text-align: center;
-} */
+}
 
-/* .container {
+.container {
   width: 90%;
   max-width: 420px;
   background: #fff;
@@ -34,7 +27,7 @@ h1 {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
   display: grid;
   gap: 1rem;
-} */
+}
 
 .calculator {
   display: grid;

@@ -263,3 +263,10 @@ main .login_form-container {
 
 /* -color-light: #F5F7FA; */
 /* --color-heading: #192335; */
+main .error {
+  background-color: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+}

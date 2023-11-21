@@ -1,16 +1,19 @@
 <?php
-// include("database.php");
+include("database.php");
 ?>
 <?php
-// if (isset($_POST['submit']))
-//   $firstname = $_POST['firstname'];
-// $lastname = $_POST['lastname'];
-// $email = $_POST['email'];
-// $staffid = $_POST['staffid'];
-// $password = $_POST['password'];
-// $insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,password ) VALUES ('$firstname','$lastname','$email','$staffid','$password')";
-// $run_record = mysqli_query($links, $insert_record);
-// echo "<script>alert('Registration Successful')</script>";
+if (isset($_POST['submit']))
+  $firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$email = $_POST['email'];
+$staffid = $_POST['staffid'];
+$password = $_POST['password'];
+$insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,password ) VALUES ('$firstname','$lastname','$email','$staffid','$password')";
+$run_record = mysqli_query($links, $insert_record);
+// if(){
+
+//   echo "<script>alert('Registration Successful')</script>";
+// }
 // header("Location: login.php", true, 301); 
 ?>
 
@@ -77,7 +80,7 @@
           </div>
           
           <input type="submit" placeholder="Register" name="submit" />
-          <p><a href="">Login instead?</a></p>
+          <p><a href="index.php">Login instead?</a></p>
         </form>
       </div>
     </main>
