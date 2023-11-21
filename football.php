@@ -1,16 +1,16 @@
 <?php
 include("database.php");
-session_start();
+// session_start();
 ?>
 <?php
 if (isset($_POST['submit']))
-$firstname = $_POST['fname'];
+  $fullname = $_POST['fname'];
 $sport = $_POST['sport'];
 $weight= $_POST['weight'];
 $date = date('Y-m-d', strtotime($_POST['date']));
 
 
-$insert_record = "INSERT INTO sport (fullname, sport, weight, date) VALUES ('$firstname','$sport','$weight','$date')";
+$insert_record = "INSERT INTO sport (fullname, sport, weight, date) VALUES ('$fullname','$sport','$weight','$date')";
 $run_record = mysqli_query($links, $insert_record);
 
 if($run_record){
