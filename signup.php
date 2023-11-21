@@ -10,11 +10,7 @@ $staffid = $_POST['staffid'];
 $password = $_POST['password'];
 $insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,password ) VALUES ('$firstname','$lastname','$email','$staffid','$password')";
 $run_record = mysqli_query($links, $insert_record);
-// if(){
 
-//   echo "<script>alert('Registration Successful')</script>";
-// }
-// header("Location: login.php", true, 301); 
 ?>
 
 <!DOCTYPE html>
