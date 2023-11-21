@@ -205,3 +205,15 @@ footer {
   height: 28px;
   font-size: 18px;
 }
+
+.page-cover form .text-form input[type='submit'] {
+  background-color: #a03333;
+  border: none;
+  font-size: 22px;
+  color: #f5f7fa;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
