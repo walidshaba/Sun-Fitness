@@ -1,6 +1,8 @@
 const password = document.getElementById('password');
 const eyeIcon = document.getElementById('eye');
 const lockIcon = document.getElementById('lock');
+const emailInput = document.getElementById('email');
+const form = document.getElementById('form');
 
 function togglePassword() {
   eyeIcon.classList.toggle('active');
@@ -21,4 +23,13 @@ const bmi2 = document.getElementById('bmi');
 
 bmi2.addEventListener('click', function () {
   bmiMenu.classList.remove('bmi');
+});
+
+form.addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  const regEx = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@sun\.edu\.ng/;
+  if (!email.includes(regEx)) {
+    window.history.back();
+    alert('Please enter a email address ending the domain staff@sun.edu.ng!');
+  }
 });

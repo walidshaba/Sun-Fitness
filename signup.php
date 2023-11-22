@@ -1,15 +1,15 @@
 <?php
-include("database.php");
+// include("database.php");
 ?>
 <?php
-if (isset($_POST['submit']))
-  $firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$email = $_POST['email'];
-$staffid = $_POST['staffid'];
-$password = $_POST['password'];
-$insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,password ) VALUES ('$firstname','$lastname','$email','$staffid','$password')";
-$run_record = mysqli_query($links, $insert_record);
+// if (isset($_POST['submit']))
+//   $firstname = $_POST['firstname'];
+// $lastname = $_POST['lastname'];
+// $email = $_POST['email'];
+// $staffid = $_POST['staffid'];
+// $password = $_POST['password'];
+// $insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,password ) VALUES ('$firstname','$lastname','$email','$staffid','$password')";
+// $run_record = mysqli_query($links, $insert_record);
 
 ?>
 
@@ -32,7 +32,7 @@ $run_record = mysqli_query($links, $insert_record);
       </span>
 
       <div class="form-container">
-        <form action="signup.php" method="post">
+        <form id="form" action="signup.php" method="post">
           <div class="form-field">
             <img src="assets/images/icons/user-regular.svg" alt="" />
             <input
