@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.prm-nme a {
+.prm-nme .land {
   position: absolute;
   left: 50px;
   border-radius: 50%;
@@ -216,4 +216,21 @@ footer {
   height: 40px;
   border-radius: 4px;
   margin-top: 10px;
+}
+
+.user-profile {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.user-profile svg {
+  width: 20px;
+}
+
+.user-profile a {
+  text-decoration: none;
+  color: #fff;
 }

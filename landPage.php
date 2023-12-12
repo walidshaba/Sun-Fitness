@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +13,8 @@
   <body>
     <main class="main-container">
       <div class="head-txt">
-        <h1>Welcome to</h1>
+        <h1><?php echo $_SESSION['firstname'];
+           ?> welcome to</h1>
         <h1>Sun Fitness Program.</h1>
         <p>Skyline University Nigeria</p>
 
@@ -35,7 +39,7 @@
       <div class="land-img"></div>
       <div class="programs-container">
         <div class="recreation-prog" id="programs">
-          <a href="recreation.html">
+          <a href="recreation.php">
             <img src="assets/images/tennis shoes.png" alt="" />
             <h1>Recreation Programs</h1>
           </a>

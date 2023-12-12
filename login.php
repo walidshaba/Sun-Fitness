@@ -27,7 +27,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             if($row['email'] === $email && $row['password'] === $pass){
                 $SESSION['email'] = $row['email'];
                 $SESSION['firstname'] = $row['firstname'];
-                header("Location: landPage.html");
+                header("Location: landPage.php");
                 exit();
             }
             else{

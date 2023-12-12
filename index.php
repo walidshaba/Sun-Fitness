@@ -1,3 +1,34 @@
+<?php 
+session_start();
+$email = $err_msg = "";
+
+include "database.php";
+if(isset($_POST['submit']))
+{
+  $email = trim($_POST['email']);
+  $password = trim($_POST['password']);
+
+  $sql = "select * from signup where email =? and password = ?";
+  $stmt = $links->prepare($sql);
+  $stmt->bind_param("ss", $email, $password);
+  if ($stmt -> execute()){
+    $result = $stmt ->get_result();
+    if ($result->num_rows > 0)
+    {
+      $row = $result -> fetch_assoc();
+      $_SESSION['email'] = $row['email'];
+      $_SESSION['firstname'] = $row['firstname'];
+      header("location:landPage.php");
+    }
+    else{
+      $err_msg = "Invalid Password / Email";
+    }
+  }
+  else{
+    $err_msg = "Invalid Password / Email";
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +45,7 @@
       <?php if (isset($_GET['error'])) { ?>
           <p class="error"><?php echo $_GET['error']; ?></p>
        <?php }?>
-      <form action="login.php" method="post" class="login_form-container">
+      <form action="index.php" method="post" class="login_form-container">
        
         <div class="login-form-field">
           <img src="assets/images/icons/envelope-regular.svg" alt="" />
@@ -23,6 +54,7 @@
             name="email"
             id="email"
             placeholder="staff@sun.edu.ng"
+            value="<?=$email?>"
           />
         </div>
         <div class="login-form-field">
