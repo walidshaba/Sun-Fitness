@@ -33,7 +33,7 @@ session_start();
           <a href="logout.php">Logout</a>
         </div>
       </div>
-      <marquee behavior="" direction="left">Join A SUN Fitness Program to win Perks </marquee>
+      <marquee behavior="" direction="left"  >Join A SUN Fitness Program to win Perks </marquee>
       <div class="main-container">
         <form action="" method="post">
           <h1>Register for Sun </h1>

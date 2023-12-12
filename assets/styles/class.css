@@ -198,3 +198,10 @@ footer {
   text-decoration: none;
   color: #fff;
 }
+
+marquee {
+  font-size: xx-large;
+  font-weight: 600;
+  height: 80px;
+  color: #f5f7fa;
+}
