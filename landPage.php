@@ -42,10 +42,11 @@ session_start();
           <a href="recreation.php">
             <img src="assets/images/tennis shoes.png" alt="" />
             <h1>Recreation Programs</h1>
+            
           </a>
         </div>
         <div class="class-prog">
-          <a href="class.html">
+          <a href="class.php">
             <img src="assets/images/yoga.png" alt="" />
             <h1>Sponsored Class</h1>
           </a>
