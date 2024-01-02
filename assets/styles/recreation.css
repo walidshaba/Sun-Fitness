@@ -87,6 +87,24 @@ body {
   font-size: 14px;
 } 
 
+.main-container {
+  /* height: 650px; */
+  /* display: flex; */
+  padding: 10px;
+}
+
+.main-container .burger{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.main-container .burger img{
+  width: 100%;
+}
 /* .main-container {
   height: 650px;
   display: flex;
