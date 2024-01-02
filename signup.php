@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sun Fitness</title>
     <link rel="stylesheet" href="assets/styles/main.css" />
-    <script src="assets/scripts/app.js" defer></script>
+    <script src="assets/scripts/signup.js" defer></script>
   </head>
 
   <body>

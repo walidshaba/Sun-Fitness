@@ -10,6 +10,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/styles/recreation.css" />
   <title>Recreation</title>
+  <script src="./assets/scripts/app.js" defer></script>
 </head>
 
 <body>
@@ -32,10 +33,10 @@ session_start();
       </div>
     </nav>
     <div class="main-container">
-      <div class="burger">
+      <div class="burger" id="burger-container">
         <img src="assets/images/icons/menu-bars.svg" alt="">
       </div>
-      <ul class="menu">
+      <ul class="menu" id="menu">
         <label class="radio_label active">
           <a href="recreation.php">Dashboard</a>
         </label>
@@ -50,40 +51,39 @@ session_start();
           <a href="">Blogs</a>
         </label>
       </ul>
-      <div class="page-cover">
-        <ul class="dashboard">
-          <li>
-            <a href="football.php">
-              <img src="assets/images/football.jpg" alt="fooball" />
-              <div class="middle"><span>Football</span></div>
-            </a>
-          </li>
-          <li>
-            <a href="basketball.php">
-              <img src="assets/images/Basketball.jpg" alt="basketball" />
-              <div class="middle"><span>Basketball</span></div>
-            </a>
-          </li>
-          <li>
-            <a href="softball.php">
-              <img src="assets/images/softball.jpg" alt="softball" />
-              <div class="middle"><span>Softball</span></div>
-            </a>
-          </li>
-          <li>
-            <a href="badminton.php">
-              <img src="assets/images/Badminton.jpg" alt="badminton" />
-              <div class="middle"><span>Badminton</span></div>
-            </a>
-          </li>
-          <li>
-            <a href="jogging.php">
-              <img src="assets/images/Jogging.jpg" alt="Jogging" />
-              <div class="middle"><span>Jogging</span></div>
-            </a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class=" page-cover">
+        <li>
+          <a href="football.php">
+            <img src="assets/images/football.jpg" alt="fooball" />
+            <div class="middle"><span>Football</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="basketball.php">
+            <img src="assets/images/Basketball.jpg" alt="basketball" />
+            <div class="middle"><span>Basketball</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="softball.php">
+            <img src="assets/images/softball.jpg" alt="softball" />
+            <div class="middle"><span>Softball</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="badminton.php">
+            <img src="assets/images/Badminton.jpg" alt="badminton" />
+            <div class="middle"><span>Badminton</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="jogging.php">
+            <img src="assets/images/Jogging.jpg" alt="Jogging" />
+            <div class="middle"><span>Jogging</span></div>
+          </a>
+        </li>
+      </ul>
     </div>
   </main>
   <footer>&copy; 2023/34 SE Grp1 Project</footer>
