@@ -12,10 +12,10 @@ session_start();
   </head>
   <body>
     <main>
-      <div class="prm-nme">
-        <a class="land" href="landPage.php"
-          ><img src="assets/images/sunlogo.png" alt=""
-        /></a>
+      <nav class="prm-nme">
+        <a class="land" href="landPage.php">
+          <img src="assets/images/sunlogo.png" alt=""/>
+        </a>
         <h1>Sun Fitness Program</h1>
         <div class="user-profile">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -27,7 +27,7 @@ session_start();
           <p><?php echo $_SESSION['firstname'];?></p>
           <a href="logout.php">Logout</a>
         </div>
-      </div>
+      </nav>
       <div class="main-container">
         <ul class="menu">
           <label class="radio_label active">
