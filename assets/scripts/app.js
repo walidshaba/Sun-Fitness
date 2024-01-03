@@ -1,9 +1,6 @@
 const burger = document.getElementById('burger-container');
 const menu = document.getElementById('menu');
-// const child = (burger.firstElementChild.src =
-//   './assets/images/icons/menu-bars.svg');
-// const replace = (burger.firstElementChild.src =
-//   './assets/images/icons/xmark-solid.svg');
+
 
 burger.addEventListener('click', () => {
   if (!burger.classList.contains('active')) {
