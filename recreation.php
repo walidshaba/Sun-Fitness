@@ -26,7 +26,7 @@ session_start();
         </svg>
         <p>
           <?php
-          //  echo $_SESSION['firstname'];
+          echo $_SESSION['firstname'];
           ?>
         </p>
         <a href="logout.php">Logout</a>

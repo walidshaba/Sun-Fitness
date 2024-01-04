@@ -28,25 +28,24 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* margin-bottom: 20px; */
 }
 .prm-nme .land {
-  position: absolute;
   left: 50px;
   border-radius: 50%;
-  background-color: #f5f7fa;
-  display: inline-block;
 }
 .prm-nme img {
   width: 100px;
 }
-
+.prm-nme h1 {
+  font-size: 18px;
+}
 .main-container {
-  height: 650px;
+  /* height: 650px; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
 }
 
 .menu {
@@ -204,4 +203,19 @@ marquee {
   font-weight: 600;
   height: 80px;
   color: #f5f7fa;
+}
+
+@media screen and (min-width: 500px) {
+  .prm-nme h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .prm-nme {
+    margin-bottom: ;
+  }
+  .prm-nme h1 {
+    font-size: 30px;
+  }
 }
