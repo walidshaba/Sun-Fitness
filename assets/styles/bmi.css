@@ -14,6 +14,13 @@
   height: 100vh;
 } */
 
+.main-container {
+  padding: 0 20px;
+}
+.main-container .page-cover {
+  padding: 10px;
+}
+
 h1 {
   text-align: center;
 }
@@ -46,7 +53,7 @@ h1 {
 }
 
 .calculator input {
-  flex: 1;
+  /* flex: 1; */
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -118,4 +125,39 @@ h1 {
 
 .obese {
   color: var(--obese);
+}
+
+@media screen and (max-width: 450px) {
+  .calculator input {
+    width: 150px;
+  }
+
+  .calculator button {
+    width: 40%;
+  }
+
+  .bmi-scale {
+    display: flex;
+  }
+
+  .bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+    padding: 10px;
+  }
+
+  .bmi-scale h4 {
+    font-size: 0.75rem;
+    color: slategray;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .main-container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
 }

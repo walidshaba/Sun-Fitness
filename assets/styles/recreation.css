@@ -224,6 +224,7 @@ footer {
   text-align: center;
   color: #f5f7fa;
   font-size: 18px;
+  bottom: 0;
 }
 /* 
 .menu {
@@ -394,6 +395,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    padding: 0 100px;
   }
 
   .main-container .burger {
@@ -419,32 +421,22 @@ footer {
     color: #192335;
     font-size: 20px;
   }
-
-  .menu label:hover {
-    background-color: #192335;
-    color: #f5f7fa;
-  }
-  .menu label:hover a {
-    color: #f5f7fa;
-  }
-  .menu label.active {
-    background-color: #192335;
-  }
-  .menu label.active a {
-    color: #f5f7fa;
-  }
-  .main-container .page-cover {
-    width: 50%;
-  }
 }
 
 @media screen and (min-width: 768px) {
+  .prm-nme {
+    margin-bottom: 100px;
+  }
+  .prm-nme h1 {
+    font-size: 30px;
+  }
   .main-container .page-cover {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
   }
   .page-cover li {
     width: 100%;

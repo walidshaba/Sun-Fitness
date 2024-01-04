@@ -51,7 +51,6 @@ session_start();
           <a href="">Blogs</a>
         </label>
       </ul>
-
       <ul class=" page-cover">
         <li>
           <a href="football.php">
