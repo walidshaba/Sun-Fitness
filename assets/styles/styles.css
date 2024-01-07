@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+/* Menu styles */
+
+body {
+  background-color: #f5f7fa;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .head-txt {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.main-container .head-txt > * {
+  color: #192335;
+  margin-bottom: 10px;
+}
+
+.main-container .head-txt h1 {
+  color: #192335;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.main-container .head-txt p {
+  font-size: 25px;
+}
+
+.main-container .head-txt .get-started {
+  padding: 10px 15px;
+  background-color: #a03333;
+  width: fit-content;
+  border-radius: 4px;
+  transition: all ease-in-out 0.35s;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  scroll-behavior: smooth;
+}
+.main-container .head-txt .get-started:hover {
+  background-color: #192335;
+}
+.main-container .head-txt .get-started svg {
+  width: 20px;
+}
+
+.land-img {
+  background-image: url('../images/sunbanner.png');
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+
+.main-container .programs-container {
+  height: 80vh;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-container .programs-container .recreation-prog,
+.main-container .programs-container .class-prog {
+  width: 300px;
+  height: 300px;
+  background-color: #192335d2;
+  border-radius: 4px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all ease 0.35s;
+  padding: 40px;
+}
+
+.main-container .programs-container .recreation-prog:hover,
+.main-container .programs-container .class-prog:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 310px;
+  height: 310px;
+  background-color: #192335;
+}
+
+.main-container .programs-container > * a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .programs-container .recreation-prog a img,
+.main-container .programs-container .class-prog a img {
+  width: 80%;
+}
+
+.main-container .programs-container .recreation-prog a h1,
+.main-container .programs-container .class-prog a h1 {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container .head-txt {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .main-container .head-txt > * {
+    color: #192335;
+    margin-bottom: 20px;
+  }
+
+  .main-container .head-txt h1 {
+    color: #192335;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+
+  .main-container .head-txt p {
+    font-size: 30px;
+  }
+
+  .main-container .head-txt .get-started {
+    padding: 10px 15px;
+    background-color: #a03333;
+    width: fit-content;
+    border-radius: 4px;
+    transition: all ease-in-out 0.35s;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 38px;
+    scroll-behavior: smooth;
+  }
+  .main-container .head-txt .get-started:hover {
+    background-color: #192335;
+  }
+  .main-container .head-txt .get-started svg {
+    width: 20px;
+  }
+  .main-container .programs-container {
+    height: 450px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 989px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    justify-content: space-around;
+  }
+
+  .main-container .head-txt {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 40%;
+  }
+
+  .main-container .head-txt > * {
+    color: #192335;
+    margin-bottom: 10px;
+  }
+
+  .main-container .head-txt h1 {
+    color: #192335;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+
+  .main-container .head-txt p {
+    font-size: 35px;
+  }
+
+  .main-container .head-txt .get-started {
+    padding: 10px 15px;
+    background-color: #a03333;
+    width: fit-content;
+    border-radius: 4px;
+    transition: all ease-in-out 0.35s;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 230px;
+    scroll-behavior: smooth;
+    font-size: 20px;
+  }
+
+  .land-img {
+    background-image: url('../images/sunbanner.png');
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+  }
+  .main-container .programs-container {
+    height: 450px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-container .programs-container .recreation-prog,
+  .main-container .programs-container .class-prog {
+    width: 350px;
+    height: 350px;
+    background-color: #192335d2;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all ease 0.35s;
+    padding: 40px;
+  }
+  .main-container .programs-container .recreation-prog:hover,
+  .main-container .programs-container .class-prog:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
+    height: 400px;
+    background-color: #192335;
+  }
+}
