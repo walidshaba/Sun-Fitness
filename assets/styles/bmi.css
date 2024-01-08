@@ -13,6 +13,12 @@
   place-items: center;
   height: 100vh;
 } */
+:root {
+  --underweight: orange;
+  --normal: green;
+  --overweight: lightcoral;
+  --obese: crimson;
+}
 
 .main-container {
   padding: 0 20px;
