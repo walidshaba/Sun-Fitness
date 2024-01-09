@@ -50,12 +50,12 @@ if (isset($_POST['submit'])) {
           <input type="text" name="staffid" id="staffid" placeholder="Staff ID " />
         </div>
         <div class="form-field">
-          <img src="assets/images/icons/id-badge-regular.svg" alt="" />
-          <input type="text" name="staffid" id="staffid" placeholder="Weight (kg)" />
+          <img src="assets/images/icons/weight-scale.svg" alt="" />
+          <input type="number" name="weight" id="weight" placeholder="Weight (kg)" />
         </div>
         <div class="form-field">
-          <img src="assets/images/icons/id-badge-regular.svg" alt="" />
-          <input type="text" name="staffid" id="staffid" placeholder="Height (cm)" />
+          <img src="assets/images/icons/tape-solid.svg" alt="" />
+          <input type="height" name="height" id="height" placeholder="Height (cm)" />
         </div>
         <div class="form-field">
           <div class="locked" id="lock"></div>
