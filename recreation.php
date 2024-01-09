@@ -33,6 +33,7 @@ session_start();
       </div>
     </nav>
     <div class="main-container">
+
       <div class="burger" id="burger-container">
         <img src="assets/images/icons/menu-bars.svg" alt="">
       </div>
@@ -45,7 +46,7 @@ session_start();
           <a href="calender.php">Calender</a>
         </label>
         <label class="radio_label">
-          <a href="">Workout</a>
+          <a href="workout.php">Workout</a>
         </label>
         <label class="radio_label">
           <a href="">Blogs</a>
