@@ -34,13 +34,15 @@ if (isset($_POST['submit'])) {
       </a>
       <h1>Jogging</h1>
       <div class="user-profile">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path fill="#fff" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
-        </svg>
+        <a href="registered_recreation.php"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#fff" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+          </svg></a>
         <p>
-          <?php
-          echo $_SESSION['firstname'];
-          ?>
+          <a href="registered_recreation.php">
+            <?php
+            echo $_SESSION['firstname']; ?>
+          </a>
+
         </p>
         <a href="logout.php">Logout</a>
       </div>
@@ -55,7 +57,7 @@ if (isset($_POST['submit'])) {
         </label>
         <label class="radio_label"><a href="bmi.php">BMI</a></label>
         <label class="radio_label">
-          <a href="calender.php">Calender</a>
+          <a href="calender.php">Sport Time</a>
         </label>
         <label class="radio_label">
           <a href="workout.php">Workout</a>
@@ -67,7 +69,7 @@ if (isset($_POST['submit'])) {
       <div class="page-cover">
         <form action="jogging.php" method="post">
           <div class="text-form">
-            <label for="">Full Name:</label><input type="text" name="fname" />
+            <label for="">Full Name:</label><input type="text" name="fname" readonly value="<?php echo $_SESSION['firstname']; ?>" />
           </div>
           <br />
           <div class="text-form">
@@ -75,7 +77,7 @@ if (isset($_POST['submit'])) {
           </div>
           <br />
           <div class="text-form">
-            <label for="">Weight in (kg):</label><input type="number" name="weight" id="" />
+            <label for="">Weight in (kg):</label><input type="number" name="weight" id="" value="<?php echo $_SESSION['weight']; ?>" />
           </div>
           <br />
           <div class="text-form">

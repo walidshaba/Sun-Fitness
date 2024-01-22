@@ -21,13 +21,15 @@ session_start();
             </a>
             <h1>Sun Fitness Program</h1>
             <div class="user-profile">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="#fff" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
-                </svg>
+                <a href="registered_recreation.php"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="#fff" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+                    </svg></a>
                 <p>
-                    <?php
-                    echo $_SESSION['firstname'];
-                    ?>
+                    <a href="registered_recreation.php">
+                        <?php
+                        echo $_SESSION['firstname']; ?>
+                    </a>
+
                 </p>
                 <a href="logout.php">Logout</a>
             </div>
@@ -37,14 +39,14 @@ session_start();
                 <img src="assets/images/icons/menu-bars.svg" alt="">
             </div>
             <ul class="menu" id="menu">
-                <label class="radio_label active">
+                <label class="radio_label ">
                     <a href="recreation.php">Dashboard</a>
                 </label>
                 <label class="radio_label"><a href="bmi.php">BMI</a></label>
                 <label class="radio_label">
-                    <a href="calender.php">Calender</a>
+                    <a href="calender.php">Sport Time</a>
                 </label>
-                <label class="radio_label">
+                <label class="radio_label active">
                     <a href="">Workout</a>
                 </label>
                 <label class="radio_label">
@@ -53,33 +55,45 @@ session_start();
             </ul>
             <ul class=" page-cover">
                 <li>
-                    <a href="football.php">
-                        <img src="assets/images/" alt="fooball" />
-                        <div class="middle"><span>Football</span></div>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/Dead Lift.jpg" alt="fooball" />
+                        <div class="middle"><span>Deadlift</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="basketball.php">
-                        <img src="assets/images/" alt="basketball" />
-                        <div class="middle"><span>Basketball</span></div>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/mountain climbers.jpeg" alt="basketball" />
+                        <div class="middle"><span>Mountain Climbers</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="softball.php">
-                        <img src="assets/images/" alt="softball" />
-                        <div class="middle"><span>Softball</span></div>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/plank.jpeg" alt="softball" />
+                        <div class="middle"><span>Planks</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="badminton.php">
-                        <img src="assets/images/" alt="badminton" />
-                        <div class="middle"><span>Badminton</span></div>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/pullup.jpg" alt="badminton" />
+                        <div class="middle"><span>Pull Ups</span></div>
                     </a>
                 </li>
                 <li>
-                    <a href="jogging.php">
-                        <img src="assets/images/" alt="Jogging" />
-                        <div class="middle"><span>Jogging</span></div>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/squat.jpeg" alt="Jogging" />
+                        <div class="middle"><span>Squats</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/bench press.jpg" alt="Jogging" />
+                        <div class="middle"><span>Bench Press</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/exercise_images/bicep curls.jpg" alt="Jogging" />
+                        <div class="middle"><span>Bicep curls</span></div>
                     </a>
                 </li>
             </ul>

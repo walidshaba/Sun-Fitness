@@ -3,12 +3,14 @@ include("database.php");
 ?>
 <?php
 if (isset($_POST['submit'])) {
-  $firstname = $_POST['firstname'];
+  $firstname = $_POST['firstname']; 
   $lastname = $_POST['lastname'];
   $email = $_POST['email'];
   $staffid = $_POST['staffid'];
+  $weight = $_POST['weight'];
+  $height = $_POST['height'];
   $password = $_POST['password'];
-  $insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,password ) VALUES ('$firstname','$lastname','$email','$staffid','$password')";
+  $insert_record = "INSERT INTO signup (firstname,lastname,email,staffid,weight,height,password ) VALUES ('$firstname','$lastname','$email','$staffid','$weight','$height','$password')";
   $run_record = mysqli_query($links, $insert_record);
 }
 ?>

@@ -16,6 +16,10 @@ if (isset($_POST['submit'])) {
       $row = $result->fetch_assoc();
       $_SESSION['email'] = $row['email'];
       $_SESSION['firstname'] = $row['firstname'];
+      $_SESSION['lastname'] = $row['lastname'];
+      $_SESSION['weight'] = $row['weight'];
+      $_SESSION['height'] = $row['height'];
+      echo "<script>alert('Successfully logged in')</script>";
       header("location:landPage.php");
     } else {
       $err_msg = "Invalid Password / Email";
